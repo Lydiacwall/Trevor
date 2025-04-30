@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BAB385CD-7301-4107-A8A4-6112592DAD62}|TrevorAPI\\TrevorAPI.csproj|c:\\users\\lydia\\desktop\\trevor3\\trevorapi\\trevorapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAB385CD-7301-4107-A8A4-6112592DAD62}|TrevorAPI\\TrevorAPI.csproj|solutionrelative:trevorapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAB385CD-7301-4107-A8A4-6112592DAD62}|TrevorAPI\\TrevorAPI.csproj|c:\\users\\lydia\\desktop\\trevor3\\trevorapi\\trevorapi\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAB385CD-7301-4107-A8A4-6112592DAD62}|TrevorAPI\\TrevorAPI.csproj|solutionrelative:trevorapi\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAB385CD-7301-4107-A8A4-6112592DAD62}|TrevorAPI\\TrevorAPI.csproj|c:\\users\\lydia\\desktop\\trevor3\\trevorapi\\trevorapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BAB385CD-7301-4107-A8A4-6112592DAD62}|TrevorAPI\\TrevorAPI.csproj|solutionrelative:trevorapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 73,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Model\\User.cs",
+              "RelativeDocumentMoniker": "TrevorAPI\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Model\\User.cs",
+              "RelativeToolTip": "TrevorAPI\\Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T13:16:18.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TrevorAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TrevorAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-12T12:27:50.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "TrevorAPI\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Services\\UserService.cs",
+              "RelativeToolTip": "TrevorAPI\\Services\\UserService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T12:04:46.129Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
