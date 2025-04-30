@@ -1,10 +1,8 @@
 package com.example.trevor3
-import androidx.compose.material3.ExperimentalMaterial3Api
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -18,13 +16,17 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.trevor3.data.local.DatabaseHelper
 import com.example.trevor3.data.local.TremorDetectionService
-import com.example.trevor3.presentation.GetStartedView
+import com.example.trevor3.presentation.get_started.GetStartedView
 import com.example.trevor3.presentation.homepage.HomePageView
 import com.example.trevor3.ui.theme.Trevor3Theme
 import com.example.trevor3.presentation.login.SignInView
 import com.example.trevor3.presentation.sign_up_user.SignUpUserView
 import dagger.hilt.android.AndroidEntryPoint
 import android.Manifest
+import android.content.Context
+import androidx.compose.runtime.LaunchedEffect
+import com.example.trevor3.domain.models.Manager
+import com.example.trevor3.presentation.Screen
 
 @OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 @AndroidEntryPoint
@@ -59,6 +61,13 @@ class MainActivity : ComponentActivity() {
             startTremorService()
         }
 
+        val prefs = getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
+        val savedEmail = prefs.getString("email", null)
+        val savedPassword = prefs.getString("password", null)
+
+
+
+
         enableEdgeToEdge()
         setContent {
             Trevor3Theme {
@@ -66,9 +75,17 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     val navController = rememberNavController()
+
+                    val startRoute = com.example.trevor3.presentation.Screen.GetStartedScreen.route
+                    if (savedEmail != null && savedPassword != null) {
+                        val startRoute = com.example.trevor3.presentation.Screen.HomePageScreen.route
+                    }
+
+
                     NavHost(
                         navController = navController,
-                        startDestination = com.example.trevor3.presentation.Screen.HomePageScreen.route
+
+                        startDestination = startRoute
                     ) {
                         composable(
                             route = com.example.trevor3.presentation.Screen.GetStartedScreen.route
@@ -86,7 +103,16 @@ class MainActivity : ComponentActivity() {
                             route = com.example.trevor3.presentation.Screen.HomePageScreen.route
                         )
                         {
-                            HomePageView(navController = navController)
+                            if (Manager.currentUser != null) {
+                                HomePageView(navController = navController)
+                            } else {
+                                // Redirect to login if not authenticated
+                                LaunchedEffect(Unit) {
+                                    navController.navigate(Screen.LoginScreen.route) {
+                                        popUpTo(Screen.HomePageScreen.route) { inclusive = true }
+                                    }
+                                }
+                            }
                         }
                         composable(
                             route = com.example.trevor3.presentation.Screen.AddUserScreen.route

@@ -1,7 +1,10 @@
 package com.example.trevor3.presentation.login
 
+import android.content.Context
+import android.util.Log
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.trevor3.R
@@ -41,6 +44,12 @@ class LoginViewModel @Inject constructor(
                         _state.value = _state.value.copy(error = "No user found with the provided credentials.", isSuccess = false)
                     } else {
                         Manager.setUser(user)
+                        val sharedPrefs = event.context.getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
+                        sharedPrefs.edit()
+                            .putString("email", user.email)
+                            .putString("password", user.password) // if you're using username/password auth
+                            .apply()
+                        Log.i(sharedPrefs.getString("email", null) + sharedPrefs.getString("password", null), "Logged in")
                         _state.value = _state.value.copy(user = user, isSuccess = true, error = null)
                     }                  }
                 }

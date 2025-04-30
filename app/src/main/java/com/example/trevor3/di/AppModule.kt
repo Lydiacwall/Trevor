@@ -26,7 +26,7 @@ object AppModule {
         val client = OkHttpClient.Builder()
             .build()
         return Retrofit.Builder()
-            .baseUrl("http://192.168.1.81:5057/")
+            .baseUrl("http://192.168.1.106:5057/")
             .client(client)
             .addConverterFactory(ScalarsConverterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())

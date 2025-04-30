@@ -1,5 +1,7 @@
-package com.example.trevor3.presentation
+package com.example.trevor3.presentation.get_started
 
+import android.content.Context
+import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -22,6 +24,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
@@ -32,22 +35,19 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.trevor3.R
+import com.example.trevor3.presentation.Screen
+import androidx.hilt.navigation.compose.hiltViewModel
 
 
-/* COLOR
-* Color(60313f)
-#e5c3ba
-#a25c67
-#a26f80
-#b899a4
-#c45c74*/
 @Composable
 fun GetStartedView(
-    navController: NavController
+    navController: NavController,
+    viewModel: GetStartedViewModel = hiltViewModel()
 ) {
     val first = FontFamily(
         Font(R.font.chewy_regular, FontWeight.Bold),
     )
+    val context = LocalContext.current
     val colors = listOf(Color(0xFFEEede7),Color(0xffe5c3ba),Color(0xFFE7D2CC),Color(0xFFB9B7BD),Color(0xffa26f80), Color(0xFF868B8E))
     Box(
         modifier = Modifier
@@ -108,7 +108,17 @@ fun GetStartedView(
                 ) {
                     Button(
                         onClick = {
-                            navController.navigate(Screen.LoginScreen.route)
+                            viewModel.tryAutoLogin(
+                                context,
+                                onSuccess = {
+                                    navController.navigate(Screen.HomePageScreen.route) {
+                                        popUpTo(0) { inclusive = true }
+                                    }
+                                },
+                                onFail = {
+                                    navController.navigate(Screen.LoginScreen.route)
+                                }
+                            )
                         },
                         colors = ButtonDefaults.buttonColors(
                             containerColor = Color(0xffa26f80),

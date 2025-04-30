@@ -65,7 +65,7 @@ fun SignInView(
 ){
     val state by viewModel.state
 
-
+    val context = LocalContext.current
     var emailInput by remember {
         mutableStateOf(state.email)
     }
@@ -151,6 +151,7 @@ fun SignInView(
                     shape = RoundedCornerShape(8.dp),
                     onValueChange = { newValue ->
                         emailInput = newValue.trimEnd()
+
                         viewModel.onEvent(LoginEvent.EmailChanged(newValue))  // Trigger the event on value change
                     },
                     maxLines = 1,
@@ -236,7 +237,7 @@ fun SignInView(
                 Button(
                     onClick = {
                         if(state.email!=""&&state.password!="") {
-                            viewModel.onEvent(LoginEvent.Validate(passwordInput, emailInput))
+                            viewModel.onEvent(LoginEvent.Validate(passwordInput, emailInput,context))
                         }
                     },
                     shape = RoundedCornerShape(10.dp),

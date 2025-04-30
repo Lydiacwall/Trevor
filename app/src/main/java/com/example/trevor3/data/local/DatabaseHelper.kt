@@ -41,7 +41,7 @@ class DatabaseHelper(private val context : Context):
                 )
 
         db?.execSQL(createTableQuery)
-        insertSampleData(db)
+        //insertSampleData(db)
 
     }
 
