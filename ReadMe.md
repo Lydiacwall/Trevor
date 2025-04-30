@@ -83,7 +83,7 @@ Epilepsy and other neurological disorders often manifest through tremors that ca
 
    - **Login**: Provide registered email and password. Invalid credentials will show an error message.
 
-        <img src="assets/sign_up_page.jpg"
+        <img src="assets/login_page.jpg"
             alt="Trevor3 layered architecture"
             style="max-width:200px; height:auto;"/>
 
