@@ -1,4 +1,4 @@
-# Trevor3: Tremor Detection and User Management System
+# Trevor: Tremor Detection and User Management System
 
 A cross-platform solution combining a .NET Core backend and an Android client app to detect, store, and analyze tremor events, as well as manage user authentication and profiles.
 
@@ -113,6 +113,4 @@ Epilepsy and other neurological disorders often manifest through tremors that ca
 
 
 
-**Contact & Support**
-For questions or issues, please open a GitHub issue or contact the development team.
 
