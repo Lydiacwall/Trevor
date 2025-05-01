@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 73,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,15 +34,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Model\\User.cs",
-              "RelativeDocumentMoniker": "TrevorAPI\\Model\\User.cs",
-              "ToolTip": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Model\\User.cs",
-              "RelativeToolTip": "TrevorAPI\\Model\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "TrevorAPI\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Services\\UserService.cs",
+              "RelativeToolTip": "TrevorAPI\\Services\\UserService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T13:16:18.537Z"
+              "WhenOpened": "2025-04-12T12:04:46.129Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -58,16 +59,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "TrevorAPI\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Services\\UserService.cs",
-              "RelativeToolTip": "TrevorAPI\\Services\\UserService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB8AAAA9AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Model\\User.cs",
+              "RelativeDocumentMoniker": "TrevorAPI\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\lydia\\Desktop\\Trevor3\\TrevorAPI\\TrevorAPI\\Model\\User.cs",
+              "RelativeToolTip": "TrevorAPI\\Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:04:46.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T13:16:18.537Z"
             }
           ]
         }
